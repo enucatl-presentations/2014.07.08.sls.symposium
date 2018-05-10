@@ -1,0 +1,21 @@
+table {
+    width: 40%;
+    margin: auto !important;
+    padding-top: 100px !important;
+}
+
+th {
+	font-weight: normal;
+    color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid black;
+}
+
+td {
+	padding: 9px 8px 0px 8px !important;
+    text-align: center !important;
+}
+
+tbody tr:hover td {
+	color: #009;
+}

@@ -1,0 +1,155 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{David2002}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=ed1f15ca25a10ce2a7ea72a524a0a86f}{David}{D\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=2615ac34b1bd3bed596edeb50c5b6f9f}{Nöhammer}{N\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=137cb5059c0c61a8b04619d6e71fe9e7}{Solak}{S\bibinitperiod}{HH}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=f4628480fac3da6228c8916f101ba7d9}{Ziegler}{Z\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=ed1f15ca25a10ce2a7ea72a524a0a86f}{David}{D\bibinitperiod}{C}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=2615ac34b1bd3bed596edeb50c5b6f9f}{Nöhammer}{N\bibinitperiod}{B}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=137cb5059c0c61a8b04619d6e71fe9e7}{Solak}{S\bibinitperiod}{HH}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=f4628480fac3da6228c8916f101ba7d9}{Ziegler}{Z\bibinitperiod}{E}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bde6f80c97150e603c6dbb9a586c3602}
+      \strng{fullhash}{5b1c876ab7bf3004af0e134124ca8485}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{{Differential x-ray phase contrast imaging using a shearing interferometer}}
+      \field{issn}{00036951}
+      \field{number}{17}
+      \field{title}{{Differential x-ray phase contrast imaging using a shearing interferometer}}
+      \field{volume}{81}
+      \field{year}{2002}
+      \field{pages}{3287\bibrangedash 3289}
+      \verb{doi}
+      \verb 10.1063/1.1516611
+      \endverb
+      \verb{file}
+      \verb :afs/psi.ch/user/t/thuering/work/article\_library/David et al.\_Differential x-ray phase contrast imaging using a shearing interferometer.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://link.aip.org/link/APPLAB/v81/i17/p3287/s1%5C&Agg=doi
+      \endverb
+    \endentry
+    \entry{Pfeiffer2006}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=8ac8c84a44d5ce6efb65c9dd67a3fde0}{Pfeiffer}{P\bibinitperiod}{F}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=0affddd9f25cce24aad68f28c57bb30f}{Weitkamp}{W\bibinitperiod}{Timm}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=2ba942b7a3694407ffeae646d994d669}{Bunk}{B\bibinitperiod}{Oliver}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=32fdeeee25f832488f48c764169f3c9e}{David}{D\bibinitperiod}{Christian}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=8ac8c84a44d5ce6efb65c9dd67a3fde0}{Pfeiffer}{P\bibinitperiod}{F}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=0affddd9f25cce24aad68f28c57bb30f}{Weitkamp}{W\bibinitperiod}{Timm}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=2ba942b7a3694407ffeae646d994d669}{Bunk}{B\bibinitperiod}{Oliver}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=32fdeeee25f832488f48c764169f3c9e}{David}{D\bibinitperiod}{Christian}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{65340a970367fbe06f512d8435061007}
+      \strng{fullhash}{3303c0505efb4a96ca3fa3f6c0dc7d5a}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{{Phase retrieval and differential phase-contrast imaging with low-brilliance X-ray sources}}
+      \field{annotation}{From Duplicate 1 ( Phase retrieval and differential phase-contrast imaging with low-brilliance X-ray sources - Pfeiffer, F; Weitkamp, T; Bunk, O; David, C )}
+      \field{issn}{1745-2473}
+      \field{journaltitle}{Nature Physics}
+      \field{month}{03}
+      \field{number}{4}
+      \field{title}{{Phase retrieval and differential phase-contrast imaging with low-brilliance X-ray sources}}
+      \field{volume}{2}
+      \field{year}{2006}
+      \field{pages}{258\bibrangedash 261}
+      \verb{doi}
+      \verb 10.1038/nphys265
+      \endverb
+      \verb{file}
+      \verb :afs/psi.ch/user/t/thuering/work/article\_library/Pfeiffer et al.\_Phase retrieval and differential phase-contrast imaging with low-brilliance X-ray sources.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/doifinder/10.1038/nphys265
+      \endverb
+    \endentry
+    \entry{david2014method}{misc}{}
+      \name{labelname}{2}{}{%
+        {{hash=040408ded72ad23bb7f9e6c091003239}{David}{D\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cf9af412f39d5dc2315de8bae6de2621}{Stampanoni}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=040408ded72ad23bb7f9e6c091003239}{David}{D\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cf9af412f39d5dc2315de8bae6de2621}{Stampanoni}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Google Patents}%
+      }
+      \strng{namehash}{74e94258fd96241af545667bd13b0112}
+      \strng{fullhash}{74e94258fd96241af545667bd13b0112}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{Method for x-ray phase contrast and dark-field imaging using an arrangement of gratings in planar geometry}
+      \field{month}{04~24}
+      \field{note}{US Patent App. 13/807,537}
+      \field{title}{Method for x-ray phase contrast and dark-field imaging using an arrangement of gratings in planar geometry}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.google.com/patents/US20140112440
+      \endverb
+    \endentry
+    \entry{Thuering2014b}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=4cbc8ea15bd0f3d5cd428dcde6b74335}{Thüring}{T\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=0c724b563ce03ae14f1e7f7eda258f16}{Abis}{A\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=92581400fc578eb34e4be9ef6e4afc33}{Wang}{W\bibinitperiod}{Z.}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=040408ded72ad23bb7f9e6c091003239}{David}{D\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cf9af412f39d5dc2315de8bae6de2621}{Stampanoni}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=4cbc8ea15bd0f3d5cd428dcde6b74335}{Thüring}{T\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=0c724b563ce03ae14f1e7f7eda258f16}{Abis}{A\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=92581400fc578eb34e4be9ef6e4afc33}{Wang}{W\bibinitperiod}{Z.}{Z\bibinitperiod}{}{}{}{}}%
+        {{hash=040408ded72ad23bb7f9e6c091003239}{David}{D\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cf9af412f39d5dc2315de8bae6de2621}{Stampanoni}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Macmillan Publishers Limited. All rights reserved}%
+      }
+      \strng{namehash}{4908ef4c6722d3cd53f95946dae5a82f}
+      \strng{fullhash}{bde22efac6daf65af8bc50a25790e03b}
+      \field{sortinit}{0}
+      \field{sortinithash}{a08a9549c5c2429f8cec5d1a581b26ca}
+      \field{labeltitle}{X-ray phase-contrast imaging at 100 keV on a conventional source}
+      \field{day}{06}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{06}
+      \field{note}{Article}
+      \field{title}{X-ray phase-contrast imaging at 100 keV on a conventional source}
+      \field{volume}{4}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://dx.doi.org/10.1038/srep05198
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

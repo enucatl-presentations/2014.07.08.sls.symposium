@@ -1,0 +1,19 @@
+[0] Config.pm:320> INFO - This is Biber 1.9
+[0] Config.pm:323> INFO - Logfile is 'abstract.blg'
+[304] biber:277> INFO - === gio ott 30, 2014, 14:56:16
+[305] Biber.pm:333> INFO - Reading 'abstract.bcf'
+[363] Biber.pm:635> INFO - Found 4 citekeys in bib section 0
+[384] Biber.pm:3051> INFO - Processing section 0
+[401] Biber.pm:3189> INFO - Looking for bibtex format file 'library.bib' for section 0
+[452] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[510] bibtex.pm:864> INFO - Found BibTeX data source 'library.bib'
+[553] Utils.pm:144> WARN - BibTeX subsystem: /tmp/zCkbGk0UrE/library.bib_17715.utf8, line 4, warning: 95 characters of junk seen at toplevel
+[554] Utils.pm:144> WARN - BibTeX subsystem: /tmp/zCkbGk0UrE/library.bib_17715.utf8, line 3151, warning: undefined macro "apl"
+[554] Utils.pm:144> WARN - The field 'journaltitle' in entry 'David2002' cannot be null, deleting it
+[598] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[598] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[598] Biber.pm:2928> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[598] Biber.pm:2932> INFO - No sort tailoring available for locale 'en-US'
+[605] bbl.pm:517> INFO - Writing 'abstract.bbl' with encoding 'UTF-8'
+[606] bbl.pm:606> INFO - Output to abstract.bbl
+[625] Biber.pm:106> INFO - WARNINGS: 3

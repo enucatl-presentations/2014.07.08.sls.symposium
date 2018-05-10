@@ -1,0 +1,250 @@
+!!!
+%html
+  %head
+    %title Grating interferometry on a 160 kVp source
+    %meta{name: "description", content: "Fourth progress report"}
+    %meta{name: "author", content: "Matteo Abis"}
+
+    %meta{name: "apple-mobile-web-app-capable", content: "yes"}
+    %meta{name: "apple-mobile-web-app-status-bar-style", content: "black-translucent"}
+
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
+
+    %link{rel: "stylesheet", href: "css/table.css"}
+    %link{rel: "stylesheet", href: "css/reveal.min.css"}
+    %link{rel: "stylesheet", href: "css/theme/eth.css", id: "theme"}
+    %link{rel: "stylesheet", href: "css/plots.css"}
+
+    <!-- For syntax highlighting -->
+    %link{rel: "stylesheet", href: "lib/css/zenburn.css"}
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    :javascript
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+          link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        }
+
+  %body
+    .reveal
+      %img{src: "images/eth-logo.jpg", alt: "ETH Logo", width: "20%", align: "left"}
+      %img{src: "images/psi-logo.jpg", alt: "PSI Logo", width: "20%", align: "right"}
+      .slides
+
+        %section{data: {"background" => "images/ETHbackground.png", "background-size" => "100%", "background-position" => "bottom"}}
+          %h2 Grating interferometry on a 160 kVp source
+          %h3 <i>M. Abis</i>, T. Thüring, Z. Wang, C. David, M. Stampanoni
+
+        %section{data: {transition: "none"}}
+          %h2 Grating interferometry
+          %h3 Talbot effect
+          #talbot-carpet
+
+        %section{data: {transition: "none"}}
+          %h2 Grating interferometry
+          %h3 Talbot effect
+          #talbot-carpet-sample
+
+        %section
+          %h2 Grating interferometry
+          %h3 The analyzer grating and phase stepping
+          %img{src: "images/phase_stepping.png", width: "40%"}
+
+        %section
+          %h2 \( n = 1 - \delta + i \beta \)
+          .div
+            %img{src: "images/ps.png", width: "40%"}
+          %ul
+            %li average intensity ratio &rightarrow; \( \beta \)
+            %li phase difference &rightarrow; \( \delta \)
+            %li amplitude ratio &rightarrow; scattering
+
+        %section
+          %h2 Why high energies?
+          .spaced
+            %p absorption \( \propto \mathcal{E}^{-3} \)
+            %p phase \( \propto \mathcal{E}^{-1} \)
+
+        %section
+          %h2 The technical challenge
+          %h3 grating parameters for constant phase sensitivity
+          %ul
+            %li.addedmargin period   \( p \propto \mathcal{E}^{-1/2} \)
+            %li.addedmargin thickness   \( t \propto \mathcal{E}^{3} \)
+            %li.addedmargin aspect ratio   \( R = 2t/p \propto \mathcal{E}^{7/2} \)
+            %ul
+              %li.addedmargin at <span style="visibility: hidden">0</span>25 keV \( R \sim 30 \) 
+              %li.addedmargin at 100 keV \( R \gt 100 \) 
+
+        %section
+          %h2 High aspect ratio gratings
+          %img{src: "images/140217_bosch_p1um_01.png", width: "40%"}
+          %img{src: "images/140505_old_au01.png", width: "40%"}
+
+        %section
+          %h2 The edge-on arrangement
+          %img{src: "images/hDPC_setup.png", width: "50%"}
+
+        %section
+          %h2 Grating design parameters
+          %table
+            %tbody
+              %tr
+                %td design energy
+                %td 100 keV
+                %td 120 keV
+              %tr
+                %td absorption depth
+                %td{colspan: "2"} 800 &micro;m
+              %tr
+                %td period
+                %td{colspan: "2"} 2.8 &micro;m
+              %tr
+                %td total length
+                %td 54 cm
+                %td 61 cm
+              %tr
+                %td \( G_1 \) material
+                %td gold
+                %td nickel
+
+        %section
+          %h2 Grating mask and fabrication
+          %img{src: "images/grating_mask.png", width: "40%"}
+
+        %section
+          %h2 The setup at PSI
+          %div
+            %img{src: "images/side.png", width: "45%"}
+          %div
+            %img{src: "images/line.png", width: "45%"}
+
+        %section
+          %h2 Performance
+          #visibility-pixel
+          #visibility-distribution
+
+        %section
+          %h2 First images at 100 keV
+          %img{src: "images/images_S00075_S00071.png", width: "50%"}
+          %p Scientific Reports 4, 5198, June 6 2014
+
+        %section
+          %h2 High-energy interactions and compton scattering
+          %h3 cross sections for carbon
+          #carbon-cross-section
+
+        %section
+          %h2 Connections between the three signals
+          %ul
+            %li.addedmargin absorption &rightarrow; extinction &rightarrow; scattering
+            %li.addedmargin scattering &rightarrow; electron density &rightarrow; phase
+
+        %section
+          %h2 Low-energy ratio of dark field and absorption
+          %p carries information about the atomic number
+          %p \[ r = \frac{\log (\text{dark field})}{\log (\text{absorption})} \]
+          %div
+            %img{src: "images/ratio_image.png", width: "28%"}
+          %div Wang et al. <i>Non-invasive classification of microcalcifications with phase-contrast X-ray mammography</i><br> Nat. Comm. 5/2014
+
+        %section
+          %h2 High-energy ratio independent of the material
+          #ratio-df
+
+        %section
+          %h2 Phase and absorption
+          %p Energy between 60 and 500 keV
+          %div.spaced
+            \\[\begin{aligned}
+            \\log (\text{absorption}) \, &amp;= -z\frac{\sigma_\text{KN}}{2} \rho_e \\
+            \\ \text{phase} \, &amp;= -z\lambda r_e \rho_e 
+            \\end{aligned} \]
+          %div.spaced
+            We et al. <i>X-ray phase attenuation duality and phase retrieval</i>, Opt. Lett. 30/2005
+
+        %section
+          %h2 Dependent signals
+          %p &plus; easier phase retrieval and fusion algorithms
+          %p &minus; less complementarity, no effective Z information
+
+        %section
+          %h2 Noise properties of the phase
+          %div.spaced
+            \\[\begin{align*}
+            \\sigma_\phi &amp;= \frac{1}{v\sqrt{N}}\\
+            &amp;= \frac{1}{v_0 \sqrt{N_0}} \frac{1}{A^{r + 1/2}}
+            \\end{align*} \]
+          %div.spaced
+            \\[\begin{align*}
+            A &amp;= \text{absorption}\\
+            B &amp;= \text{dark field}\\
+            r &amp;= \frac{\log B}{\log A}\\
+            N &amp;= \text{number of photons}\\
+            _0 &amp;= \text{without sample}
+            \\end{align*} \]
+
+        %section
+          %h2 \( \sigma_\phi(A, r) \)
+          %div
+            \\(\sigma_\phi = \frac{1}{v_0 \sqrt{N_0}} \frac{1}{A^{r + 1/2}} \qquad N_0 = 10^4 \text{ and }v_0 = 10\%\)
+          #sigma-absorption
+
+        %section
+          %h2 Goal of the project
+          %h3 \( r(\mathcal{E}, g) = \, ? \)
+          %ol
+            %li.addedmargin improved gratings
+            %li.addedmargin more measurements
+            %li.addedmargin theoretical framework
+            %li.addedmargin determine energy range and geometry for applications
+
+        %section
+          %h2 Thank you
+          %h3 and to the <span style="font-variant: small-caps;">tomcat</span> team
+          %img{src: "https://intranet.psi.ch/pub/Tomcat/WebHome/TOMCAT-group-picture.png?t=1404485550", width: "50%"}
+
+    %script{src: "lib/js/head.min.js"}
+    %script{src: "js/reveal.min.js"}
+
+    :javascript
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        //mine
+        height: "65%",
+        width: "90%",
+        margin: 0,
+        center: false,
+        transition: 'linear',
+        theme: 'eth',
+      
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/math/math.js', async: true }
+        ]
+      });
+
+    %script{src: "js/jquery.min.js"}
+    %script{src: "http://d3js.org/d3.v3.min.js", charset: "utf-8"}
+    %script{src: "js/line.js"}
+    %script{src: "js/histogram.js"}
+    %script{src: "js/visibility.js"}
+    %script{src: "js/scatter.js"}
+    %script{src: "js/ratio.js"}
+    %script{src: "js/talbot-carpet.js"}
+    %script{src: "js/cross_section.js"}
+    %script{src: "js/sigma_absorption.js"}

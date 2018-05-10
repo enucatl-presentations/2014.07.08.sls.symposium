@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grating interferometry on a 160 kVp source</title>
+    <meta content='Fourth progress report' name='description'>
+    <meta content='Matteo Abis' name='author'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+    <link href='css/table.css' rel='stylesheet'>
+    <link href='css/reveal.min.css' rel='stylesheet'>
+    <link href='css/theme/eth.css' id='theme' rel='stylesheet'>
+    <link href='css/plots.css' rel='stylesheet'>
+    <!-- For syntax highlighting -->
+    <link href='lib/css/zenburn.css' rel='stylesheet'>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+          link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        }
+    </script>
+  </head>
+  <body>
+    <div class='reveal'>
+      <img align='left' alt='ETH Logo' src='images/eth-logo.jpg' width='20%'>
+      <img align='right' alt='PSI Logo' src='images/psi-logo.jpg' width='20%'>
+      <div class='slides'>
+        <section data-background-position='bottom' data-background-size='100%' data-background='images/ETHbackground.png'>
+          <h2>Grating interferometry on a 160 kVp source</h2>
+          <h3><i>M. Abis</i>, T. Thüring, Z. Wang, C. David, M. Stampanoni</h3>
+        </section>
+        <section data-transition='none'>
+          <h2>Grating interferometry</h2>
+          <h3>Talbot effect</h3>
+          <div id='talbot-carpet'></div>
+        </section>
+        <section data-transition='none'>
+          <h2>Grating interferometry</h2>
+          <h3>Talbot effect</h3>
+          <div id='talbot-carpet-sample'></div>
+        </section>
+        <section>
+          <h2>Grating interferometry</h2>
+          <h3>The analyzer grating and phase stepping</h3>
+          <img src='images/phase_stepping.png' width='40%'>
+        </section>
+        <section>
+          <h2>\( n = 1 - \delta + i \beta \)</h2>
+          <div class='div'>
+            <img src='images/ps.png' width='40%'>
+          </div>
+          <ul>
+            <li>average intensity ratio &rightarrow; \( \beta \)</li>
+            <li>phase difference &rightarrow; \( \delta \)</li>
+            <li>amplitude ratio &rightarrow; scattering</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Why high energies?</h2>
+          <div class='spaced'>
+            <p>absorption \( \propto \mathcal{E}^{-3} \)</p>
+            <p>phase \( \propto \mathcal{E}^{-1} \)</p>
+          </div>
+        </section>
+        <section>
+          <h2>The technical challenge</h2>
+          <h3>grating parameters for constant phase sensitivity</h3>
+          <ul>
+            <li class='addedmargin'>period   \( p \propto \mathcal{E}^{-1/2} \)</li>
+            <li class='addedmargin'>thickness   \( t \propto \mathcal{E}^{3} \)</li>
+            <li class='addedmargin'>aspect ratio   \( R = 2t/p \propto \mathcal{E}^{7/2} \)</li>
+            <ul>
+              <li class='addedmargin'>at <span style="visibility: hidden">0</span>25 keV \( R \sim 30 \)</li>
+              <li class='addedmargin'>at 100 keV \( R \gt 100 \)</li>
+            </ul>
+          </ul>
+        </section>
+        <section>
+          <h2>High aspect ratio gratings</h2>
+          <img src='images/140217_bosch_p1um_01.png' width='40%'>
+          <img src='images/140505_old_au01.png' width='40%'>
+        </section>
+        <section>
+          <h2>The edge-on arrangement</h2>
+          <img src='images/hDPC_setup.png' width='50%'>
+        </section>
+        <section>
+          <h2>Grating design parameters</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>design energy</td>
+                <td>100 keV</td>
+                <td>120 keV</td>
+              </tr>
+              <tr>
+                <td>absorption depth</td>
+                <td colspan='2'>800 &micro;m</td>
+              </tr>
+              <tr>
+                <td>period</td>
+                <td colspan='2'>2.8 &micro;m</td>
+              </tr>
+              <tr>
+                <td>total length</td>
+                <td>54 cm</td>
+                <td>61 cm</td>
+              </tr>
+              <tr>
+                <td>\( G_1 \) material</td>
+                <td>gold</td>
+                <td>nickel</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Grating mask and fabrication</h2>
+          <img src='images/grating_mask.png' width='40%'>
+        </section>
+        <section>
+          <h2>The setup at PSI</h2>
+          <div>
+            <img src='images/side.png' width='45%'>
+          </div>
+          <div>
+            <img src='images/line.png' width='45%'>
+          </div>
+        </section>
+        <section>
+          <h2>Performance</h2>
+          <div id='visibility-pixel'></div>
+          <div id='visibility-distribution'></div>
+        </section>
+        <section>
+          <h2>First images at 100 keV</h2>
+          <img src='images/images_S00075_S00071.png' width='50%'>
+          <p>Scientific Reports 4, 5198, June 6 2014</p>
+        </section>
+        <section>
+          <h2>High-energy interactions and compton scattering</h2>
+          <h3>cross sections for carbon</h3>
+          <div id='carbon-cross-section'></div>
+        </section>
+        <section>
+          <h2>Connections between the three signals</h2>
+          <ul>
+            <li class='addedmargin'>absorption &rightarrow; extinction &rightarrow; scattering</li>
+            <li class='addedmargin'>scattering &rightarrow; electron density &rightarrow; phase</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Low-energy ratio of dark field and absorption</h2>
+          <p>carries information about the atomic number</p>
+          <p>\[ r = \frac{\log (\text{dark field})}{\log (\text{absorption})} \]</p>
+          <div>
+            <img src='images/ratio_image.png' width='28%'>
+          </div>
+          <div>Wang et al. <i>Non-invasive classification of microcalcifications with phase-contrast X-ray mammography</i><br> Nat. Comm. 5/2014</div>
+        </section>
+        <section>
+          <h2>High-energy ratio independent of the material</h2>
+          <div id='ratio-df'></div>
+        </section>
+        <section>
+          <h2>Phase and absorption</h2>
+          <p>Energy between 60 and 500 keV</p>
+          <div class='spaced'>
+            \[\begin{aligned}
+            \log (\text{absorption}) \, &amp;= -z\frac{\sigma_\text{KN}}{2} \rho_e \\
+            \ \text{phase} \, &amp;= -z\lambda r_e \rho_e
+            \end{aligned} \]
+          </div>
+          <div class='spaced'>
+            We et al. <i>X-ray phase attenuation duality and phase retrieval</i>, Opt. Lett. 30/2005
+          </div>
+        </section>
+        <section>
+          <h2>Dependent signals</h2>
+          <p>&plus; easier phase retrieval and fusion algorithms</p>
+          <p>&minus; less complementarity, no effective Z information</p>
+        </section>
+        <section>
+          <h2>Noise properties of the phase</h2>
+          <div class='spaced'>
+            \[\begin{align*}
+            \sigma_\phi &amp;= \frac{1}{v\sqrt{N}}\\
+            &amp;= \frac{1}{v_0 \sqrt{N_0}} \frac{1}{A^{r + 1/2}}
+            \end{align*} \]
+          </div>
+          <div class='spaced'>
+            \[\begin{align*}
+            A &amp;= \text{absorption}\\
+            B &amp;= \text{dark field}\\
+            r &amp;= \frac{\log B}{\log A}\\
+            N &amp;= \text{number of photons}\\
+            _0 &amp;= \text{without sample}
+            \end{align*} \]
+          </div>
+        </section>
+        <section>
+          <h2>\( \sigma_\phi(A, r) \)</h2>
+          <div>
+            \(\sigma_\phi = \frac{1}{v_0 \sqrt{N_0}} \frac{1}{A^{r + 1/2}} \qquad N_0 = 10^4 \text{ and }v_0 = 10\%\)
+          </div>
+          <div id='sigma-absorption'></div>
+        </section>
+        <section>
+          <h2>Goal of the project</h2>
+          <h3>\( r(\mathcal{E}, g) = \, ? \)</h3>
+          <ol>
+            <li class='addedmargin'>improved gratings</li>
+            <li class='addedmargin'>more measurements</li>
+            <li class='addedmargin'>theoretical framework</li>
+            <li class='addedmargin'>determine energy range and geometry for applications</li>
+          </ol>
+        </section>
+        <section>
+          <h2>Thank you</h2>
+          <h3>and to the <span style="font-variant: small-caps;">tomcat</span> team</h3>
+          <img src='https://intranet.psi.ch/pub/Tomcat/WebHome/TOMCAT-group-picture.png?t=1404485550' width='50%'>
+        </section>
+      </div>
+    </div>
+    <script src='lib/js/head.min.js'></script>
+    <script src='js/reveal.min.js'></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+      
+        //mine
+        height: "65%",
+        width: "90%",
+        margin: 0,
+        center: false,
+        transition: 'linear',
+        theme: 'eth',
+      
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/math/math.js', async: true }
+        ]
+      });
+    </script>
+    <script src='js/jquery.min.js'></script>
+    <script charset='utf-8' src='http://d3js.org/d3.v3.min.js'></script>
+    <script src='js/line.js'></script>
+    <script src='js/histogram.js'></script>
+    <script src='js/visibility.js'></script>
+    <script src='js/scatter.js'></script>
+    <script src='js/ratio.js'></script>
+    <script src='js/talbot-carpet.js'></script>
+    <script src='js/cross_section.js'></script>
+    <script src='js/sigma_absorption.js'></script>
+  </body>
+</html>
